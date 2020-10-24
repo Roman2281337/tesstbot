@@ -82,6 +82,9 @@ def Bot():
                                                            f"Меньшенина\n"
                                                            f"Жуков\n"
                                                            f"Сибиленков\n"
+                                                           f"Гнусаров\n"
+                                                           f"Гребень\n"
+                                                           f"Егорова\n"
                                                            f"",
                                                 "random_id": 0})
                 else:
@@ -503,7 +506,7 @@ def Bot():
                          address="ул. Полярная, дом 8 к.1, кв. 198",
                          telephone1="8-(985)-397-66-33",
                          telephone2="-",
-                         Parent1="Гнусарова елена Николаевна",
+                         Parent1="Гнусарова Елена Николаевна",
                          Parent2="-",
                          info="8 (916) 222 48 83")
                     WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
@@ -512,6 +515,63 @@ def Bot():
                     vk.method("messages.send", {"peer_id": id,
                                                 "message": f"ᛜ У вас закончилась возможность смотреть информацию (Каждый день в 0:00 чекер сбрасывается)",
                                                 "random_id": 0})
+
+
+            elif body.lower() == "гребень":
+                if WHITELISTED_USERS.get(id) < check:
+                    base(name="Гребень Данили Игоревич",
+                         mail="-",
+                         gender="м",
+                         date="19.06.2003",
+                         address="ул. Молодцова, дом 2 к.1, кв. 197",
+                         telephone1="8-(916)-232-62-43",
+                         telephone2="-",
+                         Parent1="Гребень Виктория Борисовна",
+                         Parent2="Гребень Игорь Владимирович",
+                         info="8 (910) 478 16 43")
+                    WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
+                    print(WHITELISTED_USERS)
+                else:
+                    vk.method("messages.send", {"peer_id": id,
+                                                "message": f"ᛜ У вас закончилась возможность смотреть информацию (Каждый день в 0:00 чекер сбрасывается)",
+                                                "random_id": 0})
+            elif body.lower() == "егорова":
+                if WHITELISTED_USERS.get(id) < check:
+                    base(name="егорова Полина Викторонва",
+                         mail="-",
+                         gender="м",
+                         date="09.05.2003",
+                         address="ул. Полярная, дом 16 к.1, кв. 20",
+                         telephone1="8-(916)-274-83-75",
+                         telephone2="-",
+                         Parent1="Егорова Наталья Александровна",
+                         Parent2="Егоров Виктор Александрович",
+                         info="8 (915) 175 26 73")
+                    WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
+                    print(WHITELISTED_USERS)
+                else:
+                    vk.method("messages.send", {"peer_id": id,
+                                                "message": f"ᛜ У вас закончилась возможность смотреть информацию (Каждый день в 0:00 чекер сбрасывается)",
+                                                "random_id": 0})
+            elif body.lower() == "гульбандян":
+                if WHITELISTED_USERS.get(id) < check:
+                    base(name="Гульбандян Стефан Игоревич",
+                         mail="-",
+                         gender="м",
+                         date="07.12.2002",
+                         address="Янтарный проезд, дом 15 к.1, кв. 54",
+                         telephone1="8-(919)-966-54-31",
+                         telephone2="-",
+                         Parent1="Пуйто Анна Борисовна",
+                         Parent2="-",
+                         info="8 (916) 315 90 91\n8 (901) 902 90 91")
+                    WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
+                    print(WHITELISTED_USERS)
+                else:
+                    vk.method("messages.send", {"peer_id": id,
+                                                "message": f"ᛜ У вас закончилась возможность смотреть информацию (Каждый день в 0:00 чекер сбрасывается)",
+                                                "random_id": 0})
+
 
 
             else:
