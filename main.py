@@ -537,7 +537,7 @@ def Bot():
                                                 "random_id": 0})
             elif body.lower() == "егорова":
                 if WHITELISTED_USERS.get(id) < check:
-                    base(name="егорова Полина Викторонва",
+                    base(name="Егорова Полина Викторонва",
                          mail="-",
                          gender="м",
                          date="09.05.2003",
