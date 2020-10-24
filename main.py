@@ -52,6 +52,44 @@ def Bot():
                     vk.method("messages.send", {"peer_id": id,
                                                 "message": f"ᛜ У вас закончилась возможность смотреть информацию (Каждый день в 0:00 чекер сбрасывается)",
                                                 "random_id": 0})
+
+            elif body.lower() == "/base":
+                if WHITELISTED_USERS.get(id) < check:
+                    vk.method("messages.send", {"peer_id": id,
+                                                "message": f"ᛜ Список фамилий:\n"
+                                                           f"Алексеева\n"
+                                                           f"Бет\n"
+                                                           f"Бесфамильный\n"
+                                                           f"Лаптев\n"
+                                                           f"Минаева\n"
+                                                           f"Незнанов\n"
+                                                           f"Клименко\n"
+                                                           f"Зинчевская\n"
+                                                           f"Глотова\n"
+                                                           f"Измайлов\n"
+                                                           f"Запорожцев\n"
+                                                           f"Павленко\n"
+                                                           f"Пастухова\n"
+                                                           f"Пушилин\n"
+                                                           f"Пушилина\n"
+                                                           f"Раентович\n"
+                                                           f"Райсян\n"
+                                                           f"Сергеева\n"
+                                                           f"Терентьев\n"
+                                                           f"Шевченко\n"
+                                                           f"Юровская\n"
+                                                           f"Козлова\n"
+                                                           f"Меньшенина\n"
+                                                           f"Жуков\n"
+                                                           f"Сибиленков\n"
+                                                           f"",
+                                                "random_id": 0})
+                else:
+                    vk.method("messages.send", {"peer_id": id,
+                                                "message": f"ᛜ У вас закончилась возможность смотреть информацию (Каждый день в 0:00 чекер сбрасывается)",
+                                                "random_id": 0})
+
+
             elif body.lower() == "бет":
                 if WHITELISTED_USERS.get(id) < check:
                     base(name="Бет Анастасия Алексеевна",
@@ -425,12 +463,12 @@ def Bot():
                          mail="-",
                          gender="м",
                          date="15.06.2003",
-                         address="ул. Полярная, дом 16 к.1, кв. 20",
+                         address="ул. Полярная, дом 12 к.1, кв. 163",
                          telephone1="8-(903)-233-86-74",
                          telephone2="-",
                          Parent1="Жукова Ольга Анатольевна",
                          Parent2="Жуков Игорь Валерьевич",
-                         info="8 (905) 508 96 78\nмама - https://vk.com/id5966706")
+                         info="8 (905) 508 96 72\nмама - https://vk.com/id5966706")
                     WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
                     print(WHITELISTED_USERS)
                 else:
@@ -438,6 +476,42 @@ def Bot():
                                                 "message": f"ᛜ У вас закончилась возможность смотреть информацию (Каждый день в 0:00 чекер сбрасывается)",
                                                 "random_id": 0})
 
+            elif body.lower() == "сибиленков":
+                if WHITELISTED_USERS.get(id) < check:
+                    base(name="Сибиленков Павел Андреевич",
+                         mail="-",
+                         gender="м",
+                         date="14.10.2003",
+                         address="ул. Полярная, дом 16 к.1, кв. 70",
+                         telephone1="8-(985)-935-12-90",
+                         telephone2="-",
+                         Parent1="Сибиленкова Елена Викторовна",
+                         Parent2="Сибиленков Игорь Борисовчи",
+                         info="8 (910) 465 05 60")
+                    WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
+                    print(WHITELISTED_USERS)
+                else:
+                    vk.method("messages.send", {"peer_id": id,
+                                                "message": f"ᛜ У вас закончилась возможность смотреть информацию (Каждый день в 0:00 чекер сбрасывается)",
+                                                "random_id": 0})
+            elif body.lower() == "гнусаров":
+                if WHITELISTED_USERS.get(id) < check:
+                    base(name="Гнусаров Игорь Алексеевич",
+                         mail="-",
+                         gender="м",
+                         date="18.06.2003",
+                         address="ул. Полярная, дом 8 к.1, кв. 198",
+                         telephone1="8-(985)-397-66-33",
+                         telephone2="-",
+                         Parent1="Гнусарова елена Николаевна",
+                         Parent2="-",
+                         info="8 (916) 222 48 83")
+                    WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
+                    print(WHITELISTED_USERS)
+                else:
+                    vk.method("messages.send", {"peer_id": id,
+                                                "message": f"ᛜ У вас закончилась возможность смотреть информацию (Каждый день в 0:00 чекер сбрасывается)",
+                                                "random_id": 0})
 
 
             else:
@@ -453,9 +527,9 @@ def Bot():
 
 while True:
     current_datetime = datetime.now()
-    if current_datetime.hour == 0 and current_datetime.minute == 0 and current_datetime.second == 1:
+    if current_datetime.hour == 15 and current_datetime.minute == 30 and current_datetime.second == 1:
         for i in WHITELISTED_USERS:
-            if WHITELISTED_USERS.get(i) != -999:
+            if WHITELISTED_USERS.get(i) > 0:
                 WHITELISTED_USERS[int(i)] = 0
         print("Настало время очистить чеки. Время 0:00")
         print(WHITELISTED_USERS)
