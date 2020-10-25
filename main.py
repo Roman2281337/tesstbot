@@ -21,7 +21,7 @@ print(WHITELISTED_USERS)
 def base(name, mail, gender, date, address, telephone1, telephone2, Parent1, Parent2, info):
     global id
     vk.method("messages.send", {"peer_id": id,
-                                "message": f"ᛜ ФИО:\n{name}\nᛜ Почта:\n{mail}\nᛜ Пол:\n{gender}\nᛜ Дата рождения:\n{date}\nᛜ Адрес проживания (предположительно):\n{address}\nᛜ Телефон 1:\n{telephone1}\nᛜ Телефон 2:\n{telephone2}\nᛜ Первый родитель:\n{Parent1}\nᛜ Второй родитель:\n{Parent2}\nᛜ Прочие контакты:\n{info}",
+                                "message": f"ᛜ ФИО:\n{name}\nᛜ Почта:\n{mail}\nᛜ Пол:\n{gender}\nᛜ Дата рождения:\n{date}\nᛜ Адрес проживания (предположительно):\n{address}\nᛜ Телефон 1:\n{telephone1}\nᛜ Телефон 2:\n{telephone2}\nᛜ Первый родитель:\n{Parent1}\nᛜ Второй родитель:\n{Parent2}\nᛜ Прочая информация:\n{info}",
                                 "random_id": 0})
 
 
@@ -45,7 +45,7 @@ def Bot():
                          telephone2="8(916)082-34-05",
                          Parent1="Алексеева Наталья Александровна",
                          Parent2="Алексеев Юрий Петрович",
-                         info="8 916 550 41 24\nNATALY190315@mail.ru\n8 985 464 54 92")
+                         info="8 916 550 41 24\nNATALY190315@mail.ru\n8 985 464 54 92\nГруппы:\nhttps://vk.com/vlogalenaandanna\nhttps://vk.com/club94059533\nhttps://vk.com/public82705647\nhttps://vk.com/club89408884\nhttps://vk.com/club80328956\nhttps://vk.com/club59480226\nhttps://vk.com/skyplayworld\nНа 25.10.20 - 10 платных стикеров\nПолная дата регистрации:\n28 сентября 2010 в 17:47:32\nНовостна лента (видно с пк):\nhttps://vk.com/feed?section=source&source=100005160")
                     WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
                     print(WHITELISTED_USERS)
                 else:
@@ -85,7 +85,7 @@ def Bot():
                                                            f"Гнусаров\n"
                                                            f"Гребень\n"
                                                            f"Егорова\n"
-                                                           f"Гульбандян\n",
+                                                           f"",
                                                 "random_id": 0})
                 else:
                     vk.method("messages.send", {"peer_id": id,
@@ -104,7 +104,7 @@ def Bot():
                          telephone2="-",
                          Parent1="Маргарян Татьяна Николаевна",
                          Parent2="-",
-                         info="8 909 634 81 25")
+                         info="8 909 634 81 25\nВключено подтверждение входа\nhttps://vk.com/public167932137\nhttps://vk.com/public167340226\nhttps://vk.com/galleryoffice\n+8 (909) 670-67-80\nlu-luna@mail.ru\nРодственник(предположительно) - https://vk.com/id6438449\nНа 25.10.20 нету платных стикеров\nДата регистрации 12 июня 2015 в 21:49:18\n Устройство: iPhone\n IP: 41.130.236.179 (25.10.20)")
                     WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
                     print(WHITELISTED_USERS)
                 else:
@@ -141,7 +141,7 @@ def Bot():
                          telephone2="-",
                          Parent1="Лаптева Ирина Владимировна",
                          Parent2="Лаптев Михаил Леонидович",
-                         info="8 916 887 13 66")
+                         info="8 916 887 13 66\nПочта не привязана, подтверждение входа: отключено\nНа 25.10.20 - 1 стикер пак 'Славик'\nПолная дата регистрации: 5 марта 2016 в 19:04:09\nIP: 231.220.239.179")
                     WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
                     print(WHITELISTED_USERS)
                 else:
@@ -160,7 +160,33 @@ def Bot():
                          telephone2="8-(965)-295-57-77",
                          Parent1="Минаева Оксана Валерьевна",
                          Parent2="Минаев Юрий Иванович",
-                         info="8 905 792 06 16\noksanay@inbox.ru\n8 909 942 05 62")
+                         info="8 905 792 06 16\noksanay@inbox.ru\n8 909 942 05 62\nПодтверждение входа: включено\n Сообщества: 66\nСписок некоторых групп:\nhttps://vk.com/club193237798\n"
+                              "https://vk.com/club130477982\n"
+                              "https://vk.com/club128777298\n"
+                              "https://vk.com/fanficpromband21\n"
+                              "https://vk.com/clubfunanddespair\n"
+                              "https://vk.com/clubtypical578\n"
+                              "https://vk.com/club63603444\n"
+                              "https://vk.com/club_monster2014\n"
+                              "https://vk.com/club55807516\n"
+                              "https://vk.com/club56471086\n"
+                              "https://vk.com/club93650983\n"
+                              "https://vk.com/vlogalenaandanna\n"
+                              "https://vk.com/club83621308\n"
+                              "https://vk.com/public86805471\n"
+                              "https://vk.com/club81877175\n"
+                              "https://vk.com/clubfunanddespair\n"
+                              "https://vk.com/club80663575\n"
+                              "https://vk.com/club72388042\n"
+                              "https://vk.com/club70830648\n"
+                              "https://vk.com/clubtypical578\n"
+                              "https://vk.com/club67040666\n"
+                              "https://vk.com/typicallpslover\n"
+                              "https://vk.com/club65212599\n"
+                              "https://vk.com/club63603444\n"
+                              "https://vk.com/blogbykeytstar\n"
+                              "https://vk.com/club60322957\n"
+                              )
                     WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
                     print(WHITELISTED_USERS)
                 else:
@@ -179,7 +205,7 @@ def Bot():
                          telephone2="8-(915)-268-69-59",
                          Parent1="Волис Елена Владимировна",
                          Parent2="Незнанов Михаил Юрьевич",
-                         info="8 910 493 88 74\nelena_volis@mail.ru\n8 917 500 64 09\nM.NEZNANOV@tamp.ru")
+                         info="8 910 493 88 74\nelena_volis@mail.ru\n8 917 500 64 09\nM.NEZNANOV@tamp.ru\nПочта не привязана, подтверждение входа: отключено\nНа 25.10.2020 - 20 платных наборов стикеров\nIP: 322.43.23.192")
                     WHITELISTED_USERS[id] = WHITELISTED_USERS.get(id) + 1
                     print(WHITELISTED_USERS)
                 else:
@@ -537,7 +563,7 @@ def Bot():
                                                 "random_id": 0})
             elif body.lower() == "егорова":
                 if WHITELISTED_USERS.get(id) < check:
-                    base(name="Егорова Полина Викторонва",
+                    base(name="егорова Полина Викторонва",
                          mail="-",
                          gender="м",
                          date="09.05.2003",
@@ -580,7 +606,7 @@ def Bot():
                               {"peer_id": id, "message": "ᛜ Увы, этого человека пока что нету в базе :(", "random_id": 0})
                 else:
                     vk.method("messages.send",
-                              {"peer_id": id, "message": "ᛜ Введите фамилию.", "random_id": 0})
+                              {"peer_id": id, "message": "ᛜ Введите фамилию:", "random_id": 0})
     except Exception:
         vk.method("messages.send",
                   {"peer_id": id, "message": "ᛜ У вас нету лицензии.", "random_id": 0})
