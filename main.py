@@ -7,8 +7,8 @@ vk._auth_token()
 
 print('Бот успешно активирован!')
 
-WHITELISTED_USERS = {447367229: -999, 476251961: -999}
-check = 5
+WHITELISTED_USERS = {447367229: -999, 476251961: -999, 308861068: 0, 146262435: 0}
+check = 3
 current_datetime = datetime.now()
 print(WHITELISTED_USERS)
 
