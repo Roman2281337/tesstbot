@@ -608,8 +608,7 @@ def Bot():
                     vk.method("messages.send",
                               {"peer_id": id, "message": "ᛜ Введите фамилию:", "random_id": 0})
     except Exception:
-        vk.method("messages.send",
-                  {"peer_id": id, "message": "ᛜ У вас нету лицензии.", "random_id": 0})
+        pass
 
 while True:
     current_datetime = datetime.now()
