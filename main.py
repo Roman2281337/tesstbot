@@ -1,4 +1,4 @@
-import vk_api
+"""import vk_api
 from datetime import datetime
 import time
 import requests
@@ -225,4 +225,4 @@ def arbus():
 Bot()
 print(legitID)
 while True:
-    arbus()
+    arbus()"""
