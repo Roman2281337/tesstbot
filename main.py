@@ -30,7 +30,7 @@ def Bot():
 
 
 def arbus():
-    print(".")
+    print(".",end="")
     #str
     now = datetime.now()
     month_ = now.strftime("%m")
