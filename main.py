@@ -28,7 +28,7 @@ def Bot():
 
             if day >= day_:
                 array.append(r)
-                #print(str(r['_embedded']['link_views'][0]['scheduled_lesson_id']),end=",")
+                print(str(r['_embedded']['link_views'][0]['scheduled_lesson_id']),end=",")
             k = k + 1
         except Exception:
             k=k+1
