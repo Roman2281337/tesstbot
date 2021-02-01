@@ -50,8 +50,8 @@ while True:
             old_hour = hour
             old_minute = minute
     except Exception as e:
-        pass
-    print(e)
+        print(e)
+    
 
 
 
