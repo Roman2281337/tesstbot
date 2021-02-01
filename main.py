@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 import vk_api
 import time
 
@@ -11,7 +11,7 @@ vk._auth_token()
 owner_id = 447367229
 
 
-now = datetime.now()
+now = datetime.now() + timedelta(hours=3)
 years = now.strftime("%Y")
 month = now.strftime("%m")
 day = now.strftime("%d")
@@ -33,7 +33,7 @@ old_minute = minute
 
 while True:
     time.sleep(1)
-    now = datetime.now()
+    now = datetime.now() + timedelta(hours=3)
     years = now.strftime("%Y")
     month = now.strftime("%m")
     day = now.strftime("%d")
