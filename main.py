@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 import vk_api
 import time
 
-token = "8510e0e7112f7b179bf58b82b7f540825ab95a471ae66ce512613e12a09843d9ed41a27ac1ce857947b80"
+token = "ef441637e7cf33dbd2fa1f66d3c6a8ff68b0ee76b0fe6546b85ed88d15ca5d525aff6da309f134ea45441"
 
 vk = vk_api.VkApi(token=token)
 vk._auth_token()
